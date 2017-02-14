@@ -14,18 +14,17 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <body class="light-grey content" style="max-width:1600px">
 
 <nav class="sidenav white animate-left center text-grey collapse top" style="z-index:3;width:300px;font-weight:bold" id="mySidenav"><br>
+<a href="javascript:void(0)" class="closebtn" onclick="sidenav_close()">&times;</a>
   <h3 class="padding-64"><b>Save your<br>data</b></h3>
-
-  <a href="javascript:void(0)" onclick="sidenav_close()" class="padding hide-large">CLOSE</a>
   <a href="#" onclick="sidenav_close()" class="padding">Business model canvas</a>
   <a href="#about" onclick="sidenav_close()" class="padding">Tietoa meistä</a>
   <a href="#contact" onclick="sidenav_close()" class="padding">Ota yhteyttä</a>
 </nav>
 
 <header class="container top hide-large white xlarge padding-16">
-  <span class="left padding">Save your data</span>
-  <img src="syd-logo.png" width="84px" height="42px" onclick="onClick(this)" alt="Canoeing again">
-  <a href="javascript:void(0)" class="right btn white" onclick="sidenav_open()">☰</a>
+
+  <a href="#" onclick="sidenav_close()" class="right padding">Save your data</a>
+  <a href="javascript:void(0)" class="left btn white" onclick="sidenav_open()">☰</a>
 </header>
 <div class="overlay hide-large animate-opacity" onclick="sidenav_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
@@ -34,8 +33,8 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="hide-large" style="margin-top:83px"></div>
 
   <div class="row">
-    <div class="centered">
-      <img src="h-secure.png" style="width:100%" onclick="onClick(this)" alt="Our business model canvas">
+    <div class="center padding">
+      <img src="h-secure.png" style="width:50%" onclick="onClick(this)" alt="Our business model canvas">
     </div>
 
   </div>
@@ -59,7 +58,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
 
   <div class="container green-sheen center text-light-grey padding-32" id="about">
-    <h4><b>About Us</b></h4>
+    <h4><b>Tietoa meistä</b></h4>
     <div class="content justify" style="max-width:600px">
       <h4>Save your data</h4>
       <p> Save your data on sovellus joka estää haluamatonta tietoa pääsemään nettiin. Mitä sovelluksemme tarjoaa? Sovelluksemme tarjoo ikkunan jossa näät kaiken datan mitä laitat eteen päin ja kaiken datan mitä saat. Ikkunassa näytämme yrityksen tai henkilön nimen ja maan mistä data tulee tai minne data menee. Ikkunassa voit valita mitä yrityksiä/ihmisiä estät. Tarjoamme samassa pakkauksessa palomuurin joka estää haitan tekijöitä. Save your data sovellus toimii myös tavallisen viirus turvana joka estää haitta ohjelmia.
