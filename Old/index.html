@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<title>Nettisivu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="master.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="icon" href="dislike.png">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.third img:hover{opacity: 1}
+</style>
+<body class="light-grey content" style="max-width:1600px">
+
+<nav class="sidenav white animate-left center text-grey collapse top" style="z-index:3;width:300px;font-weight:bold" id="mySidenav"><br>
+  <h3 class="padding-64"><b>Save your<br>data</b></h3>
+  <img src="syd-logo.png" style="width:50%" onclick="onClick(this)" alt="Canoeing again">
+  <a href="javascript:void(0)" onclick="sidenav_close()" class="padding hide-large">CLOSE</a>
+  <a href="#" onclick="sidenav_close()" class="padding">PORTFOLIO</a>
+  <a href="#about" onclick="sidenav_close()" class="padding">ABOUT ME</a>
+  <a href="#contact" onclick="sidenav_close()" class="padding">CONTACT</a>
+</nav>
+
+<header class="container top hide-large white xlarge padding-16">
+  <span class="left padding">Save your data</span>
+  <a href="javascript:void(0)" class="right btn white" onclick="sidenav_open()">☰</a>
+</header>
+
+<div class="overlay hide-large animate-opacity" onclick="sidenav_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="main" style="margin-left:300px">
+
+  <div class="hide-large" style="margin-top:83px"></div>
+
+  <div class="row">
+    <div class="centered">
+      <img src="h-secure.png" style="width:100%" onclick="onClick(this)" alt="Our business model canvas">
+    </div>
+
+  </div>
+
+  <div class="center padding-32">
+    <ul class="pagination">
+      <li><a class="black" href="#">1</a></li>
+      <li><a class="hover-black" href="#">2</a></li>
+      <li><a class="hover-black" href="#">3</a></li>
+      <li><a class="hover-black" href="#">4</a></li>
+      <li><a class="hover-black" href="#">»</a></li>
+    </ul>
+  </div>
+
+  <div id="modal01" class="modal black padding-0" onclick="this.style.display='none'">
+    <span class="closebtn text-white opacity hover-opacity-off xxlarge container display-topright">×</span>
+    <div class="modal-content animate-zoom center transparent padding-64">
+      <img id="img01" class="image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <div class="container green-sheen center text-light-grey padding-32" id="about">
+    <h4><b>About Us</b></h4>
+    <div class="content justify" style="max-width:600px">
+      <h4>Save your data</h4>
+      <p> Save your data on sovellus joka estää haluamatonta tietoa pääsemään nettiin. Mitä sovelluksemme tarjoaa? Sovelluksemme tarjoo ikkunan jossa näät kaiken datan mitä laitat eteen päin ja kaiken datan mitä saat. Ikkunassa näytämme yrityksen tai henkilön nimen ja maan mistä data tulee tai minne data menee. Ikkunassa voit valita mitä yrityksiä/ihmisiä estät. Tarjoamme samassa pakkauksessa palomuurin joka estää haitan tekijöitä. Save your data sovellus toimii myös tavallisen viirus turvana joka estää haitta ohjelmia.
+      </p>
+      <h2>
+      E.E.E
+      </h2>
+      <h3>Ekonomia.</h3>
+      <p>Aijomme tehdä rahan myymällä palvelujamme. Aijoimme ostaa googlelta mainos kohtia. Myymme sovellustamme ihmisille jotka ovat huolissaan tiedosta mikä laitteista lähtee.</p>
+      <h3>Eettisyys</h3>
+      <p>Ohjelmoimme ohjelman itse emme palkkaa alle 18 vuotiaita töihin asiakas palveluun tai edes siivoamaan. Välttääksemme rikkeitä.</p>
+      <h3>Ekologia</h3>
+      <p>Käytämme mahdollisemman vähän öljy tuotannon aineita koska mielestämme autamme mailmaa tekemällä näin.</p>
+      <p>mail: pekka.mattinen@syd.com</p>
+      <p>mail: jyri.saloranta@syd.com</p>
+      <p>tel: 5353 35531</p>
+      <h4 class="padding-16">How much we charge</h4>
+      <div class="row-padding" style="margin:0 -16px">
+        <div class="half margin-bottom">
+          <ul class="ul white center opacity hover-opacity-off">
+            <li class="black xlarge padding-32">Perus</li>
+            <li class="padding-16">Traffic information</li>
+            <li class="padding-16">Suojausta</li>
+            <li class="padding-16">Adblock</li>
+            <li class="padding-16">Yksi laite</li>
+            <li class="padding-16">
+              <h2>$10</h2>
+              <span class="opacity">kuukaudessa</span>
+            </li>
+            <li class="light-grey padding-24">
+              <button class="btn white padding-large hover-black">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="half">
+          <ul class="ul white center opacity hover-opacity-off">
+            <li class="black xlarge padding-32">Pro</li>
+            <li class="padding-16">kaikki perus pakkauksesta</li>
+            <li class="padding-16">5 laitetta</li>
+            <li class="padding-16">kryptatu viestit</li>
+            <li class="padding-16">Loputon tuki</li>
+            <li class="padding-16">
+              <h2>$25</h2>
+              <span class="opacity">kuukaudessa</span>
+            </li>
+            <li class="light-grey padding-24">
+              <button class="btn white padding-large hover-black">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container light-grey padding-32 padding-large" id="contact">
+    <div class="content" style="max-width:600px">
+      <h4 class="center"><b>Ota yhteyttä</b></h4>
+      <form action="form.asp" target="_blank">
+        <div class="group">
+          <label>Nimi</label>
+          <input class="input border" type="text" name="Name" required>
+        </div>
+        <div class="group">
+          <label>Sähköposti</label>
+          <input class="input border" type="text" name="Email" required>
+        </div>
+        <div class="group">
+          <label>Viesti</label>
+          <input class="input border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="btn-block padding-large black margin-bottom">Lähetä viesti</button>
+      </form>
+    </div>
+  </div>
+
+<script>
+function sidenav_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function sidenav_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
